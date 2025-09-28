@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【注文ID: [ID-PLACEHOLDER]】制作ステータス</title>
+    <link rel="stylesheet" href="../styles.css"> <style>
+        /* このページ専用のCSSはここに書くか、styles.cssに追加します */
+        .status-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 2px solid #ffcc00; /* イラストに合わせた色に調整 */
+            border-radius: 12px;
+            background-color: #fff9e6; /* 背景色も調整 */
+        }
+        .status-title {
+            font-size: 28px;
+            color: #cc6600; /* タイトルカラー */
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .current-status {
+            font-size: 36px;
+            font-weight: bold;
+            color: #007bff; /* ステータスを目立たせる色 */
+            margin-top: 15px;
+            margin-bottom: 30px;
+            padding: 10px;
+            background-color: #e6f7ff;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .detail-item {
+            margin-bottom: 15px;
+        }
+        .detail-item strong {
+            display: inline-block;
+            min-width: 120px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="status-container">
+        <h1 class="status-title">ご注文 ID: <span id="order-id">[ID-PLACEHOLDER]</span> の制作ステータス</h1>
+        
+        <p>お客様のイラスト制作状況は以下の通りです。</p>
+        
+        <div class="current-status" id="status-display">
+            ★★ 制作中 (線画チェック待ち) ★★
+        </div>
+        <h2>詳細情報</h2>
+        <div class="detail-item">
+            <strong>ご注文日:</strong> <span id="order-date">[DATE-PLACEHOLDER]</span>
+        </div>
+        <div class="detail-item">
+            <strong>最終更新日:</strong> <span id="update-date">[UPDATE-PLACEHOLDER]</span>
+        </div>
+        <div class="detail-item">
+            <strong>納品予定日:</strong> <span id="delivery-date">[DELIVERY-PLACEHOLDER]</span>
+        </div>
+        <div class="detail-item">
+            <strong>現在の作業内容:</strong> <p id="work-notes">
+                着色工程が完了し、最終チェックに進んでいます。問題がなければ本日中に納品いたします。
+            </p>
+        </div>
+
+        <p style="margin-top: 40px; text-align: center;">ご不明な点はお気軽にご連絡ください。</p>
+    </div>
+
+</body>
+</html>
