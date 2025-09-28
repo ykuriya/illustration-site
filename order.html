@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イラストご依頼・ご注文フォーム | 【あなたのクリエイター名】</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* フォームのコンテナを中央寄せにする */
+        .form-container {
+            max-width: 800px; /* フォームの最大幅を調整 */
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .form-info {
+            background-color: #fff8e1; /* 注意書きを目立たせる色 */
+            border: 1px solid #ffcc80;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .form-info h3 {
+            color: #cc6600;
+            margin-bottom: 10px;
+        }
+        /* 埋め込まれたGoogleフォーム (iframe) のスタイル調整 */
+        .google-form-embed iframe {
+            width: 100%;
+            /* フォームの高さに合わせて調整してください */
+            height: 1200px; 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">🎨 あなたのロゴ/クリエイター名</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#portfolio">ポートフォリオ</a></li>
+                <li><a href="index.html#service">料金・サービス</a></li>
+                <li><a href="order.html">ご依頼/注文</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>イラストご依頼フォーム</h1>
+
+            <div class="form-info">
+                <h3>⚠️ ご依頼前の確認事項</h3>
+                <ul>
+                    <li>フォーム送信前に、必ず <a href="index.html#service">料金・サービス案内</a> をご確認ください。</li>
+                    <li>このフォームは、ご注文内容の**ヒアリング**を目的としています。</li>
+                    <li>送信完了後、2日以内に詳細確認のメールを差し上げます。</li>
+                </ul>
+            </div>
+
+            <div class="google-form-embed">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1jIDC-8eJOgTS6NFbjpECT25BJ3Z7CrPVBF-EeO_ozGo_yA/viewform?embedded=true" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 あなたのクリエイター名 All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">特定商取引法に基づく表記</a> 
+            <a href="#">プライバシーポリシー</a>
+        </div>
+    </footer>
+
+</body>
+</html>
