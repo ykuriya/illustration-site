@@ -1,2 +1,2 @@
-github pages test.
-use gemini.
+# 概要
+github pages test. use gemini.
