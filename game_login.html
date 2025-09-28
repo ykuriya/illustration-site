@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シークレット・ログイン | 【クリエイター名】</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: #cc6600;
+        }
+        #password-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button-primary {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="login-container">
+            <h1>🎨 シークレット・ゲーム開始</h1>
+            <p>この隠された部屋に入るには、特定の**呪文**が必要です。</p>
+            
+            <input type="password" id="password-input" placeholder="パスワードを入力してください">
+            
+            <button class="button-primary" onclick="checkPassword()">
+                秘密の扉を開く
+            </button>
+            
+            <p style="margin-top: 20px; font-size: 14px;"><a href="index.html">トップページに戻る</a></p>
+        </section>
+    </main>
+
+    <script>
+        function checkPassword() {
+            const CORRECT_PASSWORD = "みずみずしいね～"; 
+            const enteredPassword = document.getElementById('password-input').value;
+
+            if (enteredPassword === CORRECT_PASSWORD) {
+                alert("ようこそ！特別なゲームを始めます！");
+                window.location.href = "minigame.html"; 
+            } else {
+                alert("パスワードが違います。もう一度確認してください。");
+                document.getElementById('password-input').value = "";
+            }
+        }
+    </script>
+
+</body>
+</html>
