@@ -1,0 +1,169 @@
+/* ==================================== */
+/* 1. リセットと基本設定 */
+/* ==================================== */
+* {
+    /* ブラウザのデフォルト設定をリセットし、ボックスサイズの計算を分かりやすくする */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* サイト全体のフォント、背景色、文字色を設定 */
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7; /* やわらかい背景色 */
+    color: #333333; /* 基本の文字色 */
+}
+
+a {
+    /* リンクの装飾をリセット */
+    text-decoration: none;
+    color: #cc6600; /* アクセントカラーをリンク色に設定 */
+}
+
+a:hover {
+    /* ホバー時の装飾 */
+    opacity: 0.8;
+}
+
+/* ==================================== */
+/* 2. ヘッダー (ナビゲーション) のスタイル */
+/* ==================================== */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px 5%;
+    display: flex; /* ロゴとナビゲーションを横並びにする */
+    justify-content: space-between; /* 両端に配置 */
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc6600; /* クリエイター名を目立たせる色 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #555555;
+    font-weight: 500;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent; /* ホバー時の変化を滑らかにするため、透明な線を設定 */
+}
+
+nav ul li a:hover {
+    color: #cc6600;
+    border-bottom: 2px solid #ffaa44;
+}
+
+/* ==================================== */
+/* 3. ボタンの共通スタイル */
+/* ==================================== */
+.button-primary, .button-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s; /* ホバー時の変化を滑らかにする */
+}
+
+.button-primary {
+    background-color: #cc6600; /* メインカラー */
+    color: white;
+    border: 2px solid #cc6600;
+}
+
+.button-primary:hover {
+    background-color: #e67300;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #cc6600;
+    border: 2px solid #cc6600;
+}
+
+.button-secondary:hover {
+    background-color: #ffeecc;
+}
+
+/* ==================================== */
+/* 4. セクションと見出しのスタイル */
+/* ==================================== */
+section {
+    padding: 80px 5%; /* 上下の余白を確保 */
+    max-width: 1200px; /* PCでの表示幅を制限 */
+    margin: 0 auto; /* 中央寄せ */
+}
+
+section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666666;
+    border-bottom: 1px solid #cccccc;
+    display: inline-block; /* 見出しの下線を文字幅に合わせる */
+    padding-bottom: 10px;
+}
+
+/* ==================================== */
+/* 5. ポートフォリオ (ギャラリー) のスタイル */
+/* ==================================== */
+.gallery-grid {
+    display: grid;
+    /* 3列で表示し、列の間に20pxの隙間を空ける */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; /* 画像が枠からはみ出さないように */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-item img {
+    width: 100%; /* 親要素の幅いっぱいに広げる */
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ==================================== */
+/* 6. フッターのスタイル */
+/* ==================================== */
+footer {
+    background-color: #333333;
+    color: #cccccc;
+    text-align: center;
+    padding: 30px 5%;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
